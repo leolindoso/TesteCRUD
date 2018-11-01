@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+.nav {
+    font-variant: small-caps;
+}
+
+.container{
+}
+.centerBox{
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vmax;
+    background: rgb(255, 255, 255);
+    border-color : rgb(179, 179, 179);
+}
+
+.login{
+    margin: 10vmax;
+    margin-top: 5vh;
+    text-align: center;
+    justify-content: center;
+}
