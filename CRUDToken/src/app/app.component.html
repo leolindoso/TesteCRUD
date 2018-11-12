@@ -2,25 +2,5 @@
   <a class="navbar-brand" href="#"><strong>CRUD</strong> TEST</a>
 
 </nav>
-<div class="container">
-    <div class="centerBox">
-      <div class="login">
-        <h1><strong>LOGIN</strong></h1>
-        <br>
-          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="this.email" name = "email">
-          <br>
-          <input type="password" class="form-control" id="Password" aria-describedby="emailHelp" placeholder="Enter password" [(ngModel)]="this.password" name="password">        
-          <br>
-          <button class="btn btn-primary" (click)="LoginButton()">Login</button>
-        </div>
-        <div *ngIf="!loginFailed && loginDone" class="alert alert-dismissible alert-success">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Success!</strong> You are Logged In! <a href="#" class="alert-link">this important alert message</a>.
-          </div>
-          <div *ngIf="loginFailed && loginDone" class="alert alert-dismissible alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Oh No!</strong> Something went wrong! <a href="#" class="alert-link">this important alert message</a>.
-          </div>
-    </div>
-</div>
+<router-outlet></router-outlet>
 
